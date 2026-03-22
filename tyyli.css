@@ -1,0 +1,282 @@
+:root {
+  --primary: #00c4b4;            
+  --dark:    #2d3748;
+  --gray:    #4a5568;
+  --light:   #f7fafc;
+  --white:   #ffffff;
+  --black:  #000000;
+}
+
+header, footer {
+  text-align: center;
+  
+}
+
+.korostus {
+  color: var(--primary);
+}
+
+/* navigointi */
+
+.topnav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1rem;
+  justify-content: center;
+  color: var(--gray) ;
+
+
+}
+
+.topnav a.active {color:black;}
+
+.topnav a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.topnav {
+  color: var(--gray);
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.4rem 0;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  
+}
+
+
+
+/* fontit */
+body {
+  font-family: 'Open Sans', system-ui, sans-serif;
+  color: var(--dark);
+  background: var(--light);
+  line-height: 1.6;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: var(--primary);
+  font-size: 42px;
+}
+
+h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: var(--primary);
+  font-size: 36px;
+}
+
+/* kotisivu */
+
+/* kansikuva */
+
+.kansi {
+  background: linear-gradient(rgba(248, 247, 247, 0.199), rgba(247, 248, 248, 0)),
+              url(kuvat/kansikuva.jpg) center/100% auto no-repeat;
+  text-align: center;
+  padding: 6rem 1rem 5rem;
+  color: var(--dark);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.kansi h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.kansi p {
+  font-size: 1.2rem;
+  max-width: 680px;
+  margin: 0 auto;
+  color: var(--light);
+}
+
+/* kortit */
+
+
+.features {
+  padding: 4rem 0;
+  background: white;
+}
+
+.features h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+}
+
+ .feature-grid {
+  display: grid;
+  grid-template-columns: 4fr;
+  gap: 1rem;
+  justify-content: center;
+ }
+
+.feature-card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  text-align: center;
+}
+
+.feature-card h3 {
+  margin: 1rem 0 0.8rem;
+  font-size: 1.4rem;
+}
+
+/* palvelut */
+
+.pesulakuva {
+   background: linear-gradient(rgba(248, 247, 247, 0.199), rgba(247, 248, 248, 0)),
+              url(kuvat/pesula.jpg) center/100% auto no-repeat;
+  text-align: center;
+  padding: 6rem 1rem 5rem;
+  color: var(--dark);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pesulakuva p {
+  font-size: 1.2rem;
+  max-width: 680px;
+  margin: 0 auto;
+  color: var(--light);
+}
+
+.palvelut {
+  padding: 4rem 0;
+
+}
+
+.palvelut div {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  max-width: 600px;
+}
+
+.pesukuva {
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+   width: 50%;
+  height: auto;
+}
+
+.palvelut h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+}
+
+
+/* yhteystiedot */
+
+.google-map {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.google-map iframe {
+     height: 500px;
+     width: 500px;
+     border-radius: 2em;
+     border: none;
+     justify-content: center;
+     
+     
+     
+} 
+
+
+.yhteystiedot2 {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+
+
+
+}
+
+
+
+/* banneri */
+.banneri {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 5rem 1rem;
+}
+
+.banneri h2 {
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+  hyphens: auto;
+}
+
+.banneri p {
+  font-size: 1.3rem;
+  max-width: 700px;
+  margin: 0 auto;
+}       
+
+
+
+
+
+/* mobiili */
+@media screen and (max-width: 430px) 
+{
+nav li {display: block;
+        text-align: left;}  
+header {display:flex;
+        flex-direction: column;}
+.feature-grid {
+      flex-direction: column;
+      align-items: center;}
+}
+               
+
+
+/* keskikokoiset näytöt */
+@media screen and (min-width: 431px)
+{
+.flex_container {display: flex;
+                gap:10px}
+.flex_item {flex:1}
+.feature-grid {grid-template-columns: repeat(2, 1fr);}
+
+}
+
+/* isot näytöt */
+@media screen and (min-width: 1200px)
+
+{
+.feature-grid {grid-template-columns: repeat(4, 1fr);}
+}
